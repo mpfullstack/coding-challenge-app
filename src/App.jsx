@@ -1,5 +1,8 @@
-import React from "react";
+import * as React from "react";
+import MatchesTable from "./modules/matches/components/MatchesTable";
 
 export default () => {
-    return <p>Coding Challenge App</p>
+  return (
+    <MatchesTable />
+  );
 }
