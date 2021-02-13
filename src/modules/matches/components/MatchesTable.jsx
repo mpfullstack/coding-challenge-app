@@ -4,7 +4,7 @@ import { getMatches } from "../../../services/matches";
 
 const columns = [
   { field: 'id', headerName: 'Id', width: 120 },
-  { field: 'teams', headerName: 'Teams', width: 130 },
+  { field: 'teams', headerName: 'Teams', width: 280 },
   { field: 'date', headerName: 'Date', width: 130 },
   { field: 'time', headerName: 'Time', width: 90 },
   { field: 'result', headerName: 'Result', width: 160 }
