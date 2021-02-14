@@ -1,0 +1,40 @@
+{
+  "name": "coding-challenge",
+  "version": "1.0.0",
+  "description": "Coding challenge app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mpfullstack/coding-challenge-app.git"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions",
+    "build": "parcel build --no-source-maps index.html",
+    "serve": "serve dist"
+  },
+  "author": "Marc Perez <info@marcperez.cat>",
+  "license": "MIT",
+  "resolutions": {
+    "node-forge": "^0.10.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "4.11.3",
+    "@material-ui/data-grid": "4.0.0-alpha.19",
+    "@material-ui/icons": "4.11.2",
+    "prop-types": "15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-use-form-state": "0.13.2",
+    "styled-components": "5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/plugin-transform-runtime": "7.12.15",
+    "@babel/preset-env": "7.12.13",
+    "@babel/preset-react": "7.12.13",
+    "parcel-bundler": "1.12.4",
+    "serve": "11.3.2"
+  }
+}
