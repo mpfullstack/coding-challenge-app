@@ -1,4 +1,5 @@
 import SuperFetch from '../helpers/superFetch';
+import { Match } from '../models/match';
 
 export async function getMatches() {
   // Fetch data from source URL
@@ -11,13 +12,13 @@ export async function getMatches() {
   const matches = [];
   Object.keys(matchesObj).forEach(id => {
     const match = matchesObj[id];
-    matches.push({
+    matches.push(new Match({
       id,
       teams: `${match.teams.home.name} - ${match.teams.away.name}`,
       date: match.time.date,
       time: match.time.time,
       result: `${match.result.home} - ${match.result.away}`
-    });
+    }));
   });
 
   return matches;
@@ -25,9 +26,18 @@ export async function getMatches() {
 
 export async function deleteMatch(id) {
   // NOTE: We simulate an API call to delete a match
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve(id);
+    }, 200);
+  });
+}
+
+export async function createMatch(match) {
+  // NOTE: We simulate an API call to create a match
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(match);
     }, 200);
   });
 }
