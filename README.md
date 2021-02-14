@@ -11,9 +11,6 @@ Clone this repository. You will need `node` and `npm` installed globally on your
 Installation:
 `npm install`
 
-To run test suite:
-`npm test`
-
 To start local server development:
 `npm start`
 
@@ -22,3 +19,4 @@ To visit app:
 
 To build for production:
 `npm run build`
+`npm run serve`
