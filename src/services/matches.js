@@ -22,3 +22,12 @@ export async function getMatches() {
 
   return matches;
 }
+
+export async function deleteMatch(id) {
+  // NOTE: We simulate an API call to delete a match
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(id);
+    }, 200);
+  });
+}
